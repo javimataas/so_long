@@ -6,7 +6,7 @@
 /*   By: jmatas-p <jmatas-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/31 18:15:48 by jmatas-p          #+#    #+#             */
-/*   Updated: 2023/06/05 15:48:55 by jmatas-p         ###   ########.fr       */
+/*   Updated: 2023/06/05 20:16:32 by jmatas-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,6 @@ void	ft_end_game(t_game *game)
 	{
 		mlx_close_window(game->mlx);
 		ft_printf("GAME ENDED!!!\n");
-		free(game->collectible);
 	}
 	else
 		ft_printf("PENDING COLLECTIBLES!!!\n");

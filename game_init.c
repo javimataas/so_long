@@ -6,7 +6,7 @@
 /*   By: jmatas-p <jmatas-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/30 18:39:25 by jmatas-p          #+#    #+#             */
-/*   Updated: 2023/06/05 20:02:19 by jmatas-p         ###   ########.fr       */
+/*   Updated: 2023/06/05 20:17:09 by jmatas-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,6 @@ void	ft_init_window(t_game *game)
 	ft_free_textures(&textures);
 	mlx_loop_hook(game->mlx, &ft_hook, game);
 	mlx_loop(game->mlx);
-	mlx_terminate(game->mlx);
 }
 
 void	ft_init_game(char **map)
